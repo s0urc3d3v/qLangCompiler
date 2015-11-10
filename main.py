@@ -48,7 +48,9 @@ def main():
     src_path = input("Enter a path: ")
     if src_path.endswith('.q'):
         src = read(src_path)
-    checkForKeywords(src)
+        checkForKeywords(src)
+    else:
+        print('Error: either \n 1. file does not end in .q\n 2. path is invalid\n 3. file is invalid')
 
 
 main()
